@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Login Page</title>
+<head>
+<!--  Load CSS in Flask with html-->
+    <link rel="stylesheet" href='/static/css/indexstyle.css' />
+  <img src="https://i.giphy.com/media/KGhpQ5NMoWKQurlHwI/giphy.webp" alt="Computer Man" style="width:108px;height:68px;">
+
+<style>
+body {
+  background-image: url('https://wallpaperaccess.com/full/221471.jpg');
+  background_repeat:no_repeat;
+  background-size: 100%;
+}
+</style>
+  </head>
+
+  <body  auto align="center" style="background-color:#ccffcc">
+    <form action="/form.login" method="post">
+      <h1 style="font-family:verdana"><U>Login Form</u></h1>
+      <b>UserName:</b><br>
+      <input type="text" name="Username"><br>
+       <b>Password:</b><br>
+      <input name="password"><br><br>
+      <input type="submit" value="Login">
+
+    </form>
+  <h1>{{info}}</h1>
+  </body>
+</html>
